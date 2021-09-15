@@ -73,10 +73,35 @@ ul{
     color: #fff;
     font-size: 14px;
 }
+
+
 /* FOR BURGER */
 @media (max-width: 767px){
     .header__menu {
         display: none;
+    }
+    .header__burger{
+        width: 30px;
+        display: grid;
+        align-items: center;
+        grid-template: repeat(3, 8px) / 1fr;
+    }
+    .header__burger::before{
+        content: "";
+        height: 2px;
+        width: 30px;
+        background-color: #fff;
+    }
+    .header__burger::after {
+        content: "";
+        height: 2px;
+        width: 30px;
+        background-color: #fff;
+    }
+    .header__burger span{
+        height: 2px;
+        width: 30px;
+        background-color: #fff;
     }
 }
 
